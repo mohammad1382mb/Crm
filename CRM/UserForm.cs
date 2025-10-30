@@ -34,7 +34,7 @@ namespace CRM
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 15, 15));
         }
 
-        Image pic;
+       
         OpenFileDialog ofd = new OpenFileDialog();
         UserBLL ubll = new UserBLL();
         MainWindow w = (MainWindow)System.Windows.Application.Current.Windows.OfType<Window>().FirstOrDefault();
@@ -115,46 +115,12 @@ namespace CRM
             return uar;
 
         }
-        string SavePic(string UserName)
-        {
-            string path = Path.GetDirectoryName(System.Windows.Forms.Application.ExecutablePath) + @"\UserName\";
-            if (!Directory.Exists(path))
-            {
-                Directory.CreateDirectory(path);
-            }
-            string PicName = UserName + ".JPG";
-            try
-            {
-                string picPath = ofd.FileName;
-                File.Copy(picPath, path + PicName,true);
-            }
-            catch (Exception e)
-            {
-                mb.MyShowDialog("توجه", "کاربر بدون عکس سیو شد","",false,false);
-               
-            }
-            return path + PicName;
-        }
+
         MsgBox mb = new MsgBox();
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-            ofd.Filter = "JPG(*.JPG)|*.JPG";
-            ofd.Title = ".تصویر کاربر خود را انتخاب کنید";
-            if (ofd.ShowDialog() == DialogResult.OK)
-            {
-                pic = Image.FromFile(ofd.FileName);
-                pictureBox2.Image = pic;
-                pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            }
-        }
+       
         private void pictureBox3_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-           
-            
         }
         private void dataGridViewX1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -163,6 +129,7 @@ namespace CRM
         }
         private void UserForm_Load(object sender, EventArgs e)
         {
+            
            datadrid();
         }
 
@@ -171,11 +138,6 @@ namespace CRM
             User u = ubll.Readid(id);
             textBoxX4.Text = u.Name;
             textBoxX1.Text = u.UserName;
-            //pictureBox2.Image = Image.FromFile(u.Pic);
-            string imagePath = @"C:\Users\Pixel\Downloads\add_image.png";
-            Image newImage = Image.FromFile(imagePath);
-            pictureBox2.Image = newImage;
-            pictureBox2.SizeMode = PictureBoxSizeMode.CenterImage;
             label3.Text = "ویرایش اطلاعات";
             textBoxX5.WatermarkText = "کلمه عبور جدید";
             textBoxX3.WatermarkText = "تکرار کلمه عبور جدید";
@@ -312,10 +274,6 @@ namespace CRM
             }
         }
 
-        private void pictureBox5_Click(object sender, EventArgs e)
-        {
-        }
-
         private void pictureBox4_Click(object sender, EventArgs e)
         {
             if (textBoxX1.Text != "" && textBoxX4.Text != "" && textBoxX5.Text != "" && textBoxX3.Text != "" && textBoxX2.Text != "")
@@ -338,7 +296,7 @@ namespace CRM
                 {
                     if (ubll.Access(w.Loadwindow, "بخش کاربران", 2))
                     {
-                        u.Pic = SavePic(textBoxX1.Text);
+                      
                         mb.MyShowDialog("ثبت کاربر", ubll.Create(u, ug), "", false, false);
                     }
                 }
@@ -346,12 +304,8 @@ namespace CRM
                 {
                     if (ubll.Access(w.Loadwindow, "بخش کاربران", 3))
                     {
-                        u.Pic = SavePic(textBoxX1.Text);
+                        
                         mb.MyShowDialog("ویرایش کاربر", ubll.Update(u, id), "", false, false);
-                        string imagePath = @"C:\Users\Pixel\Downloads\add_image.png";
-                        Image newImage = Image.FromFile(imagePath);
-                        pictureBox2.Image = newImage;
-                        pictureBox2.SizeMode = PictureBoxSizeMode.CenterImage;
                         label3.Text = "ثبت کالا";
                         textBoxX5.WatermarkText = "کلمه عبور";
                         textBoxX3.WatermarkText = "تکرار کلمه عبور";
@@ -391,7 +345,7 @@ namespace CRM
             
         }
 
-        private void dataGridViewX1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void groupBox2_Enter(object sender, EventArgs e)
         {
 
         }

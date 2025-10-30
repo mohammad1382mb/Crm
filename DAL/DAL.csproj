@@ -72,6 +72,11 @@
     <Compile Include="DashbordDAL.cs" />
     <Compile Include="DB.cs" />
     <Compile Include="InvoiceDAL.cs" />
+    <Compile Include="Migrations\202402041953246_InitialCreate.cs" />
+    <Compile Include="Migrations\202402041953246_InitialCreate.designer.cs">
+      <DependentUpon>202402041953246_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="ProductDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReminderDAL.cs" />
@@ -91,6 +96,11 @@
   <ItemGroup>
     <Content Include="smsir-package-icon.ico" />
     <Content Include="smsir-package-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202402041953246_InitialCreate.resx">
+      <DependentUpon>202402041953246_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

@@ -12,3 +12,17 @@ C:\Users\Pixel\source\repos\CRM\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
 C:\Users\Pixel\source\repos\CRM\BLL\obj\Debug\BLL.csproj.CopyComplete
 C:\Users\Pixel\source\repos\CRM\BLL\obj\Debug\BLL.dll
 C:\Users\Pixel\source\repos\CRM\BLL\obj\Debug\BLL.pdb
+D:\Programmer\VS-CRM\BLL\bin\Debug\BLL.dll
+D:\Programmer\VS-CRM\BLL\bin\Debug\BLL.pdb
+D:\Programmer\VS-CRM\BLL\bin\Debug\BE.dll
+D:\Programmer\VS-CRM\BLL\bin\Debug\DAL.dll
+D:\Programmer\VS-CRM\BLL\bin\Debug\EntityFramework.dll
+D:\Programmer\VS-CRM\BLL\bin\Debug\BE.pdb
+D:\Programmer\VS-CRM\BLL\bin\Debug\DAL.pdb
+D:\Programmer\VS-CRM\BLL\bin\Debug\DAL.dll.config
+D:\Programmer\VS-CRM\BLL\bin\Debug\EntityFramework.xml
+D:\Programmer\VS-CRM\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
+D:\Programmer\VS-CRM\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+D:\Programmer\VS-CRM\BLL\obj\Debug\BLL.csproj.CopyComplete
+D:\Programmer\VS-CRM\BLL\obj\Debug\BLL.dll
+D:\Programmer\VS-CRM\BLL\obj\Debug\BLL.pdb

@@ -84,7 +84,6 @@ namespace DAL
                     user.Name = u.Name;
                     user.UserName = u.UserName;
                     user.Password = u.Password;
-                    user.Pic = u.Pic;
                     db.SaveChanges();
                     return "ویرایش کاربر با موفقیت انجام شد";
             }

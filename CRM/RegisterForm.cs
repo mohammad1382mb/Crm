@@ -33,7 +33,6 @@ namespace CRM
             t1.Start();
         }
         int y = 176;
-        Image pic;
         OpenFileDialog ofd = new OpenFileDialog();
         UserBLL ubll = new UserBLL();
         UserGroupBLL ugbll = new UserGroupBLL();
@@ -65,26 +64,7 @@ namespace CRM
             ug.userAccessRoles.Add(filluseraccess("بخش تنظیمات", true, true, true, true));
             ugbll.Create(ug);
         }
-        string SavePic(string UserName)
-        {
-            string path = Path.GetDirectoryName(System.Windows.Forms.Application.ExecutablePath) + @"\UserName\";
-            if (!Directory.Exists(path))
-            {
-                Directory.CreateDirectory(path);
-            }
-            string PicName = UserName + ".JPG";
-            try
-            {
-                string picPath = ofd.FileName;
-                File.Copy(picPath, path + PicName, true);
-            }
-            catch (Exception e)
-            {
-                mb.MyShowDialog("اخطار", "سیستم قادر به ذخیره عکس نمی باشد" , e.Message, false,true);
-               
-            }
-            return path + PicName;
-        }
+        
         private void symbolBox2_Click(object sender, EventArgs e)
         {
             System.Windows.Forms.Clipboard.SetText(textBoxX1.Text);
@@ -149,7 +129,7 @@ namespace CRM
        
         private void pictureBox7_Click(object sender, EventArgs e)
         {
-            if (textBoxX3.Text != "" || textBoxX4.Text != "" || textBoxX5.Text != "" || textBoxX6.Text != "" || u.Pic != null)
+            if (textBoxX3.Text != "" || textBoxX4.Text != "" || textBoxX5.Text != "" || textBoxX6.Text != "" )
             {
                 UserGroup ug = new UserGroup();
                 u.Name = textBoxX4.Text;
@@ -159,7 +139,6 @@ namespace CRM
                 if (textBoxX5.Text == textBoxX6.Text)
                 {
                     u.Password = textBoxX5.Text;
-                    u.Pic = SavePic(textBoxX3.Text);
                     if (ubll.ReadCheck(u) == true)
                     {
                         mb.MyShowDialog("ثبت", ubll.Create(u, ugbll.ReadN("مدیریت")), "", false, false);
@@ -189,15 +168,7 @@ namespace CRM
             
         }
 
-        private void pictureBox8_Click(object sender, EventArgs e)
-        {
-            ofd.Filter = "JPG(*.JPG)|*.JPG";
-            ofd.Title = "تصویر کاربر خود را انتخاب کنید";
-            if (ofd.ShowDialog() == DialogResult.OK)
-            {
-                pic = Image.FromFile(ofd.FileName);
-            }
-        }
+       
 
         private void textBoxX2_TextChanged(object sender, EventArgs e)
         {

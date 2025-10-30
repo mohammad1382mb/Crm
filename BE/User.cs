@@ -12,7 +12,6 @@ namespace BE
         public string Name { get; set; }
         public string UserName { get; set; }
         public string Password { get; set; }
-        public string Pic { get; set; }
         public bool status { get; set; }
         public DateTime RegUser { get; set; }
         public List<Activity> activities { get; set; } = new List<Activity>();
