@@ -1,0 +1,6 @@
+C:\Users\Pixel\source\repos\CRM\BE\bin\Debug\BE.dll
+C:\Users\Pixel\source\repos\CRM\BE\bin\Debug\BE.pdb
+C:\Users\Pixel\source\repos\CRM\BE\obj\Debug\BE.csprojAssemblyReference.cache
+C:\Users\Pixel\source\repos\CRM\BE\obj\Debug\BE.csproj.CoreCompileInputs.cache
+C:\Users\Pixel\source\repos\CRM\BE\obj\Debug\BE.dll
+C:\Users\Pixel\source\repos\CRM\BE\obj\Debug\BE.pdb

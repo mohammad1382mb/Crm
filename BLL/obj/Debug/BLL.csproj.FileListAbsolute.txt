@@ -1,0 +1,14 @@
+C:\Users\Pixel\source\repos\CRM\BLL\bin\Debug\BLL.dll
+C:\Users\Pixel\source\repos\CRM\BLL\bin\Debug\BLL.pdb
+C:\Users\Pixel\source\repos\CRM\BLL\bin\Debug\BE.dll
+C:\Users\Pixel\source\repos\CRM\BLL\bin\Debug\DAL.dll
+C:\Users\Pixel\source\repos\CRM\BLL\bin\Debug\EntityFramework.dll
+C:\Users\Pixel\source\repos\CRM\BLL\bin\Debug\BE.pdb
+C:\Users\Pixel\source\repos\CRM\BLL\bin\Debug\DAL.pdb
+C:\Users\Pixel\source\repos\CRM\BLL\bin\Debug\DAL.dll.config
+C:\Users\Pixel\source\repos\CRM\BLL\bin\Debug\EntityFramework.xml
+C:\Users\Pixel\source\repos\CRM\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
+C:\Users\Pixel\source\repos\CRM\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\Pixel\source\repos\CRM\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\Pixel\source\repos\CRM\BLL\obj\Debug\BLL.dll
+C:\Users\Pixel\source\repos\CRM\BLL\obj\Debug\BLL.pdb

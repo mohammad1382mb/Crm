@@ -1,0 +1,150 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CRM"
+        xmlns:hc="https://handyorg.github.io/handycontrol" x:Class="CRM.MainWindow"
+        mc:Ignorable="d"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        Background="Transparent"
+        AllowsTransparency="True"       
+        Title="MainWindow" Height="720" Width="1280" x:Name="Main" Loaded="Main_Loaded" >
+    <Border BorderBrush="#3490DE" BorderThickness="20" CornerRadius="25">
+
+        <Grid Background="#3490DE" x:Name="MainGride">
+
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="8*"/>
+                <ColumnDefinition Width="47*"/>
+                <ColumnDefinition Width="20*"/>
+                <ColumnDefinition Width="133*"/>
+                <ColumnDefinition Width="103*"/>
+                <ColumnDefinition Width="103*"/>
+                <ColumnDefinition Width="103*"/>
+                <ColumnDefinition Width="96*"/>
+                <ColumnDefinition Width="110*"/>
+                <ColumnDefinition Width="104*"/>
+                <ColumnDefinition Width="103*"/>
+                <ColumnDefinition Width="103*"/>
+                <ColumnDefinition Width="104*"/>
+                <ColumnDefinition Width="103*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Border Grid.RowSpan="2" Grid.ColumnSpan="14" BorderBrush="#ffffff" BorderThickness="15" CornerRadius="15">
+                <Rectangle Fill="#ffffff"  />
+            </Border>
+            <Border Grid.Row="2" Grid.RowSpan="10" Grid.ColumnSpan="3" Grid.Column="11" BorderBrush="#241468" Margin="20,10,0,0" CornerRadius="10" BorderThickness="15" Background="#FF241468">
+                <Rectangle Fill="#241468" Stroke="#FF241468" HorizontalAlignment="Center" VerticalAlignment="Center"  />
+            </Border>
+            <Border Grid.Row="2" Grid.RowSpan="3" Grid.ColumnSpan="3" Grid.Column="8" BorderBrush="#521262" Margin="0,10,0,0" CornerRadius="10" BorderThickness="15">
+                <Rectangle Fill="#521262" />
+            </Border>
+            <Border Grid.Row="2" Grid.RowSpan="3" Grid.ColumnSpan="3" Grid.Column="5" BorderBrush="#ffffff" Margin="0,10,10,0" CornerRadius="10" BorderThickness="15">
+                <Rectangle Fill="#ffffff"  />
+            </Border>
+            <Border Grid.Row="2" Grid.RowSpan="3" Grid.ColumnSpan="5" Grid.Column="0" BorderBrush="#ffffff" Margin="0,10,20,0" CornerRadius="10" BorderThickness="15">
+                <Rectangle Fill="#ffffff" />
+            </Border>
+            <Border Grid.Row="5" Grid.RowSpan="6" Grid.ColumnSpan="3" Grid.Column="8" BorderBrush="#ffffff" Margin="0,10,0,0" CornerRadius="10" BorderThickness="15">
+                <Rectangle Fill="#ffffff" />
+            </Border>
+            <Border  Grid.Row="11" Grid.RowSpan="1" Grid.ColumnSpan="3" Grid.Column="8" BorderBrush="#ffffff" Margin="0,10,0,0" CornerRadius="10" BorderThickness="15">
+                <Rectangle Fill="#ffffff" />
+            </Border>
+
+
+
+            <Border x:Name="BorderReminders" Grid.Row="5" Grid.RowSpan="7" Grid.ColumnSpan="8" Grid.Column="0" BorderBrush="#521262" Margin="0,10,10,0" CornerRadius="10" BorderThickness="15">
+                <Rectangle Fill="#521262" Margin="0,0,-5,0">
+                </Rectangle>
+            </Border>
+            <Image  Source="/Image/Exit.png" Margin="24,16,0,4" MouseLeftButtonDown="Image_MouseLeftButtonDown" Cursor="Hand" Grid.Row="2" RenderTransformOrigin="0.553,0.487" Grid.Column="1" Grid.ColumnSpan="2"  />
+            <Image Source="/Image/icons8-off-48.png" Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="3" Margin="10,10,122,10" Grid.RowSpan="2" Cursor="Hand" MouseLeftButtonDown="Image_MouseLeftButtonDown_2" />
+            <Image Source="/Image/icons8-next-page-50.png" Grid.Row="11" Grid.Column="4" Margin="73,10,93,12" Stretch="Fill" Grid.ColumnSpan="2" MouseLeftButtonDown="Image_MouseLeftButtonDown_3" HorizontalAlignment="Center" VerticalAlignment="Center" Height="40" Width="40" Cursor="Hand"/>
+
+            <Image Source="/Image/USer.png" Margin="30,22,30,10" MouseLeftButtonDown="Image_MouseLeftButtonDown_1" Grid.Column="4" Cursor="Hand" RenderTransformOrigin="0.5,0.5" Stretch="Fill" Grid.Row="2"/>
+            <hc:PersianCalendar Grid.Row="5" Grid.RowSpan="7" Grid.ColumnSpan="3" Grid.Column="8" Margin="14,12,9,60"/>
+            <hc:SearchBar Grid.ColumnSpan="4" Grid.Column="3" Height="40"  Margin="73,10,69,10" TextWrapping="Wrap" Text="SearchBar" VerticalAlignment="Center" Width="300"   Grid.RowSpan="2" FontFamily="Microsoft Tai Le" FontSize="16" HorizontalAlignment="Center"/>
+            <local:Clocktime Margin="18,22,13,12" Grid.Row="11" Grid.Column="8" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Center" Loaded="Clocktime_Loaded" Width="286" Height="28"/>
+            <Label Style="{StaticResource TitleTxtBorder}" Foreground="#ffffff" Content="مشتری ها" Margin="102,16,91,0" Grid.Row="2" Grid.Column="8" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Center" Height="46" Width="124"/>
+            <Label Style="{StaticResource TitleTxtBorder}" Foreground="#241468" Content="فروش ها" Margin="91,16,1,0" Grid.Row="2" Grid.Column="5" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" Height="46" Width="114"/>
+            <Label Style="{StaticResource TitleTxtBorder}" Foreground="#241468" Content="یادآور های امروز" Margin="62,5,20,10" Grid.Row="4" Grid.Column="3" Grid.ColumnSpan="2" FontSize="20"/>
+            <Label x:Name="UserNameTxt" Style="{StaticResource TitleTxtBorder}" Foreground="#241468" Content="اطلاعات کاربر" Grid.Row="2" Grid.Column="3" Grid.ColumnSpan="2" FontSize="20" Margin="0,22,30,7" HorizontalAlignment="Right" Width="126"/>
+            <Label x:Name="NameTxt" Style="{StaticResource TitleTxtBorder}" Foreground="#241468" Content="اطلاعات کاربر" Grid.Row="2" Grid.Column="3" Grid.ColumnSpan="2" FontSize="20" Margin="73,60,37,22" Grid.RowSpan="2" HorizontalAlignment="Right"/>
+            <Label x:Name="CountCustomerTxt" Style="{StaticResource TitleTxtBorder}" Foreground="#ffffff" FontSize="40" Content="0" Margin="95,5,0,0" Grid.Row="3" Grid.Column="8" Grid.ColumnSpan="3"/>
+            <Label x:Name="CountSellsTxt" Style="{StaticResource TitleTxtBorder}" Foreground="#241468" FontSize="40" Content="0" Margin="0,5,16,0" Grid.Row="3" Grid.Column="6"/>
+            <Label x:Name="CountRemindersTxt" Style="{StaticResource TitleTxtBorder}" Foreground="#241468" FontSize="20" Content="0" Margin="26,8,84,22" Grid.Row="4" Grid.Column="3" RenderTransformOrigin="0.5,0.531" />
+            <Image Source="/Image/Customers.png" Style="{StaticResource Icons}" Margin="79,5,78,5" Grid.Row="3" Grid.Column="9" Grid.ColumnSpan="2" Stretch="Fill" Width="Auto" />
+            <Image Source="/Image/Dolar.png" Style="{StaticResource Icons}"  Grid.Row="3" Grid.Column="6" Margin="76,5,73,5" Stretch="Fill" Width="Auto" Grid.ColumnSpan="2"/>
+            <Label Margin="30,43,8,40" Grid.Row="2" Grid.RowSpan="2" Grid.Column="11" Grid.ColumnSpan="3" FontFamily="Microsoft Tai Le" FontSize="24" FontWeight="Bold" Foreground="#ffffff" Content="مدیریت ارتباط با مشتریان" Background="#FF241468" BorderBrush="#FF241468" Height="41" Width="272"/>
+
+            <WrapPanel Grid.Row="4" Grid.RowSpan="2" Grid.Column="11" Grid.ColumnSpan="3" Margin="95,0,0,0">
+                <TextBlock Style="{StaticResource TxtWhite}" Text="مدیریت مشتریان" Cursor="Hand" MouseLeftButtonDown="TextBlock_MouseLeftButtonDown" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                <Image Source="/Image/Customers.png" Width="40" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </WrapPanel>
+            <WrapPanel Margin="2,55,0,0" Grid.Row="4" Grid.RowSpan="2" Grid.Column="12" Grid.ColumnSpan="2">
+                <TextBlock  Style="{StaticResource TxtWhite}" Text="مدیریت کالا ها"  Cursor="Hand" MouseLeftButtonDown="TextBlock_MouseLeftButtonDown_1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <Image Source="/Image/Product.png" Width="30" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </WrapPanel>
+            <WrapPanel  Margin="100,45,0,0" Grid.Row="5" Grid.RowSpan="2" Grid.Column="11" Grid.ColumnSpan="3">
+                <TextBlock  Style="{StaticResource TxtWhite}" Text="لیست فاکتور ها" Cursor="Hand" MouseLeftButtonDown="TextBlock_MouseLeftButtonDown_2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <Image Source="/Image/Invoice.png" Width="30" HorizontalAlignment="Center" VerticalAlignment="Center" />
+            </WrapPanel>
+            <WrapPanel Margin="22,35,0,0"  Grid.Row="6" Grid.RowSpan="2" Grid.Column="12" Grid.ColumnSpan="2" >
+                <TextBlock  Style="{StaticResource TxtWhite}" Text="فعالیت ها" Cursor="Hand" MouseLeftButtonDown="TextBlock_MouseLeftButtonDown_3" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <Image Source="/Image/Activity.png" Width="30" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </WrapPanel>
+            <WrapPanel  Grid.Row="7" Grid.RowSpan="2" Grid.Column="12" Grid.ColumnSpan="2" Margin="32,25,0,0">
+                <TextBlock  Style="{StaticResource TxtWhite}" Text="یادآور ها" Cursor="Hand" MouseLeftButtonDown="TextBlock_MouseLeftButtonDown_4" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <Image Source="/Image/ReminderWhite.png" Width="30" HorizontalAlignment="Center" VerticalAlignment="Center" />
+            </WrapPanel>
+            <WrapPanel  Margin="22,15,0,0" Grid.Row="8" Grid.RowSpan="2" Grid.Column="12" Grid.ColumnSpan="2" >
+                <TextBlock  Style="{StaticResource TxtWhite}" Text="پنل پیامکی" Cursor="Hand" MouseLeftButtonDown="TextBlock_MouseLeftButtonDown_5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <Image Source="/Image/Sms.png" Width="30" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </WrapPanel>
+            <WrapPanel  Margin="0,8,0,0" Grid.Row="9" Grid.RowSpan="2" Grid.Column="12" Grid.ColumnSpan="2" >
+                <TextBlock Style="{StaticResource TxtWhite}" Text="مدیریت کاربران" Cursor="Hand" MouseLeftButtonDown="TextBlock_MouseLeftButtonDown_6" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <Image Source="/Image/icons8-add-user-100.png" Width="30" HorizontalAlignment="Center" VerticalAlignment="Center" />
+
+            </WrapPanel>
+            <WrapPanel  Margin="32,0,0,0" Grid.Row="10" Grid.RowSpan="2" Grid.Column="12" Grid.ColumnSpan="2" >
+                <TextBlock Style="{StaticResource TxtWhite}" Text="گزارشات" Cursor="Hand" HorizontalAlignment="Center" VerticalAlignment="Center" MouseLeftButtonDown="TextBlock_MouseLeftButtonDown_8"/>
+                <Image Source="/Image/Report.png" Width="30" HorizontalAlignment="Center" VerticalAlignment="Center" />
+            </WrapPanel>
+            <WrapPanel   Margin="7,50,0,0" Grid.Row="10" Grid.RowSpan="2" Grid.Column="12" Grid.ColumnSpan="2">
+                <TextBlock  Style="{StaticResource TxtWhite}" Text="تنظیمات برنامه" Cursor="Hand" MouseLeftButtonDown="TextBlock_MouseLeftButtonDown_7" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <Image Source="/Image/Setting.png" Width="30" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Image.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-360.616"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Image.RenderTransform>
+                </Image>
+            </WrapPanel>
+
+
+        </Grid>
+
+    </Border>
+
+</Window>

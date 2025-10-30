@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BE.Activity" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gABAAAABAAAAAEAAAAAAAAAAAAAAAAAAABAIAAAAAwA=</HashCode>
+      <FileName>Activity.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="customer" />
+      <Property Name="user" />
+      <Property Name="category" />
+      <Property Name="reminders" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="BE.ActivityCategory" Collapsed="true">
+    <Position X="8.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAQAgA=</HashCode>
+      <FileName>ActivityCategory.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="activities" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="BE.Customer" Collapsed="true">
+    <Position X="3.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>oAAAAAAAAAAAAAAAAAAAQAQAAAAAAAAAABAIAAAAAgA=</HashCode>
+      <FileName>Customer.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="invoices" />
+      <Property Name="activities" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="BE.Invoice" Collapsed="true">
+    <Position X="3.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIBAAABAAAAAAAAAgAAAAAAAAAAAAIAAAAABAAAAgA=</HashCode>
+      <FileName>Invoice.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="customer" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="products" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="BE.Product" Collapsed="true">
+    <Position X="1.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAQAAAAAAAAAAAAQAgAAAAAAAABAAAAAAAgA=</HashCode>
+      <FileName>Product.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="invoices" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="BE.Reminders" Collapsed="true">
+    <Position X="8" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAACAAAAAAAEBAAAAAAAAAAAAAgAAAQBAAAEAAAgA=</HashCode>
+      <FileName>Reminders.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="activity" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="BE.User" Collapsed="true">
+    <Position X="4.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>oAQAAAAAAAAAgACAAAACAAQAAAAAAAACAQAAAAAAAgA=</HashCode>
+      <FileName>User.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="userGroup" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="activities" />
+      <Property Name="invoices" />
+      <Property Name="reminders" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="BE.UserAccessRole" Collapsed="true">
+    <Position X="7.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAABAAAAAAACAAAAAAAAAAEAAAAAAAAABAIAAAgA=</HashCode>
+      <FileName>UserAccessRole.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="userGroup" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="BE.UserGroup" Collapsed="true">
+    <Position X="4.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IACAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>UserGroup.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="users" />
+      <Property Name="userAccessRoles" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
