@@ -78,7 +78,17 @@ namespace CRM
         private void dataGridViewX1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             contextMenuStrip1.Show(Cursor.Position.X , Cursor.Position.Y);
-            id =Convert.ToInt32(dataGridViewX1.Rows[dataGridViewX1.CurrentRow.Index].Cells["آیدی"].Value);
+            object value = dataGridViewX1.Rows[dataGridViewX1.CurrentRow.Index].Cells["آیدی"].Value;
+
+            if (value == null || value == DBNull.Value || string.IsNullOrWhiteSpace(value.ToString()))
+            {
+                id = 0; // یا هر مقدار پیش‌فرضی که مدنظرته
+            }
+            else
+            {
+                id = Convert.ToInt32(value);
+            }
+
         }
 
         private void CustomerForm_Load(object sender, EventArgs e)
@@ -154,5 +164,7 @@ namespace CRM
             datadrid();
             FillTxt();
         }
+
+        
     }
 }

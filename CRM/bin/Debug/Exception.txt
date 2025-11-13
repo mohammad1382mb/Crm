@@ -1,0 +1,38 @@
+----------------------------
+[Customer Explanation]
+
+
+
+----------------------------
+[General Info]
+
+Application: Stimulsoft Reports.Net
+Framework:   v4.0.30319
+Version:     Version: 2014.3.0 from 1 December 2014
+MachineName: DESKTOP-AJ6BO59
+OSVersion:   Microsoft Windows NT 6.2.9200.0
+UserName:    Pixel
+
+----------------------------
+[Exception Info]
+Message:     Unable to cast object of type 'System.String' to type 'Stimulsoft.Report.Dictionary.StiVariable'.
+
+Source:      Stimulsoft.Report.Design
+
+StackTrace:
+   at Stimulsoft.Report.Dictionary.Design.StiDictionaryControl.BuildVariables(StiDictionary dictionary)
+   at Stimulsoft.Report.Dictionary.Design.StiDictionaryControl.Build(StiReport report, Boolean showUsedObjects)
+   at Stimulsoft.Report.Dictionary.Design.StiDictionaryControl.Build(StiReport report)
+   at Stimulsoft.Report.Design.Panels.StiDictionaryPanelService.OnRefreshDictionary(Object sender, EventArgs e)
+   at Stimulsoft.Report.Design.StiDesignerControl.OnRefreshDictionary(EventArgs e)
+   at Stimulsoft.Report.Design.StiBuilder.BuildReport()
+   at Stimulsoft.Report.Design.StiReportOpenDialog.OpenReport(StiDesignerControl designer, StiReport report)
+   at Stimulsoft.Report.Design.StiActions.MainMenu.InvokeReportOpen(StiDesignerControl designer)
+
+----------------------------
+[Assemblies]
+mscorlib, Version = 4.0.0.0
+Stimulsoft.Base, Version = 2014.3.0.0
+Stimulsoft.Report, Version = 2014.3.0.0
+Stimulsoft.Report.Design, Version = 2014.3.0.0
+System.Windows.Forms, Version = 4.0.0.0

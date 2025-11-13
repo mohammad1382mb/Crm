@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
@@ -59,7 +60,8 @@ namespace CRM
                     //if (res == DialogResult.Yes)
                     //{
                         StiReport sti = new StiReport();
-                        sti.Load(@"C:\Users\Pixel\source\repos\CRM\InvoiceReportMothe.mrt");
+                        string path = Path.Combine(System.Windows.Forms.Application.StartupPath, "Reports", "InvoiceReportMothe.mrt");
+                        sti.Load(path);
                         sti.Render();
                         sti.Show();
                     //}
@@ -67,28 +69,32 @@ namespace CRM
                 else if (RbInvoicesOldWeek.Checked)
                 {
                     StiReport sti = new StiReport();
-                    sti.Load(@"C:\Users\Pixel\source\repos\CRM\InvoiceReportWeek.mrt");
+                    string path = Path.Combine(System.Windows.Forms.Application.StartupPath, "Reports", "InvoiceReportWeek.mrt");
+                    sti.Load(path);
                     sti.Render();
                     sti.Show();
                 }
                 else if (RBListOldYear.Checked)
                 {
                     StiReport sti = new StiReport();
-                    sti.Load(@"C:\Users\Pixel\source\repos\CRM\Invoice-Report-Year.mrt");
+                    string path = Path.Combine(System.Windows.Forms.Application.StartupPath, "Reports", "Invoice-Report-Year.mrt");
+                    sti.Load(path);
                     sti.Render();
                     sti.Show();
                 }
                 else if (RBCustomerList.Checked)
                 {
                     StiReport sti = new StiReport();
-                    sti.Load(@"C:\Users\Pixel\source\repos\CRM\Report-Record-Customer.mrt");
+                    string path = Path.Combine(System.Windows.Forms.Application.StartupPath, "Reports", "Report-Record-Customer.mrt");
+                    sti.Load(path);
                     sti.Render();
                     sti.Show();
                 }
                 else if(RBActivitys.Checked)
                 {
                     StiReport sti = new StiReport();
-                    sti.Load(@"C:\Users\Pixel\source\repos\CRM\Report-Record-Activity.mrt");
+                    string path = Path.Combine(System.Windows.Forms.Application.StartupPath, "Reports", "Report-Record-Activity.mrt");
+                    sti.Load(path);
                     sti.Render();
                     sti.Show();
                     
@@ -206,7 +212,8 @@ namespace CRM
                         }
                     }
                     StiReport sti = new StiReport();
-                    sti.Load(@"C:\Users\Pixel\source\repos\CRM\ReportCountCustomer.mrt");
+                    string path = Path.Combine(System.Windows.Forms.Application.StartupPath, "Reports", "ReportCountCustomer.mrt");
+                    sti.Load(path);
                     sti.RegBusinessObject("Customer", customers);
                     sti.Render();
                     sti.Show();
@@ -223,7 +230,8 @@ namespace CRM
                         }
                     }
                     StiReport sti = new StiReport();
-                    sti.Load(@"C:\Users\Pixel\source\repos\CRM\ReportCountActivity.mrt");
+                    string path = Path.Combine(System.Windows.Forms.Application.StartupPath, "Reports", "ReportCountActivity.mrt");
+                    sti.Load(path);
                     sti.RegBusinessObject("Activity", activities);
                     sti.Render();
                     sti.Show();
@@ -240,7 +248,8 @@ namespace CRM
                         }
                     }
                     StiReport sti = new StiReport();
-                    sti.Load(@"C:\Users\Pixel\source\repos\CRM\ReportCountInvoice.mrt");
+                    string path = Path.Combine(System.Windows.Forms.Application.StartupPath, "Reports", "ReportCountInvoice.mrt");
+                    sti.Load(path);
                     sti.RegBusinessObject("Invoice", i);
                     sti.Render();
                     sti.Show();
@@ -254,7 +263,8 @@ namespace CRM
                         products.Add(item);
                     }
                     StiReport sti = new StiReport();
-                    sti.Load(@"C:\Users\Pixel\source\repos\CRM\ReportCountProduct.mrt");
+                    string path = Path.Combine(System.Windows.Forms.Application.StartupPath, "Reports", "ReportCountProduct.mrt");
+                    sti.Load(path);
                     sti.RegBusinessObject("Product", products);
                     sti.Render();
                     sti.Show();

@@ -252,10 +252,10 @@ namespace CRM
 
         private void Main_Loaded(object sender, RoutedEventArgs e)
         {
-           
+
             LoudingForm lf = new LoudingForm();
             OpenwinForm(lf);
-            
+
         }
 
         private void Clocktime_Loaded(object sender, RoutedEventArgs e)

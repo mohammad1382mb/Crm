@@ -19,7 +19,6 @@ C:\Users\Pixel\source\repos\CRM\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
 C:\Users\Pixel\source\repos\CRM\DAL\obj\Debug\DAL.csproj.CopyComplete
 C:\Users\Pixel\source\repos\CRM\DAL\obj\Debug\DAL.dll
 C:\Users\Pixel\source\repos\CRM\DAL\obj\Debug\DAL.pdb
-D:\Programmer\VS-CRM\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
 D:\Programmer\VS-CRM\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
 D:\Programmer\VS-CRM\DAL\obj\Debug\DAL.dll
 D:\Programmer\VS-CRM\DAL\obj\Debug\DAL.pdb
@@ -42,3 +41,4 @@ D:\Programmer\VS-CRM\DAL\bin\Debug\System.Management.Automation.xml
 D:\Programmer\VS-CRM\DAL\obj\Debug\DAL.csproj.CopyComplete
 D:\Programmer\VS-CRM\DAL\obj\Debug\DAL.Migrations.InitialCreate.resources
 D:\Programmer\VS-CRM\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
+D:\Programmer\VS-CRM\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache

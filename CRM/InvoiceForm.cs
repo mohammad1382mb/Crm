@@ -8,10 +8,12 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Stimulsoft.Report;
 using BE;
 using BLL;
 using System.Windows;
+using Stimulsoft.Report;
+using System.IO;
+
 
 namespace CRM
 {
@@ -74,7 +76,7 @@ namespace CRM
             checkBox1.Checked = false;
             label1.Text = "";
             label3.Text = "";
-            label6.Text = "";
+            label6.Text = DateTime.Now.Date.ToString("yyyy/MM/dd");
             label9.Text = "";
             label12.Text = "";
 
@@ -133,7 +135,8 @@ namespace CRM
                     if (res == DialogResult.Yes)
                     {
                         StiReport sti = new StiReport();
-                        sti.Load(@"C:\Users\Pixel\source\repos\CRM\Report.mrt");
+                        string path = Path.Combine(System.Windows.Forms.Application.StartupPath, "Report.mrt");
+                        sti.Load(path);
                         sti.Dictionary.Variables["InvoicNum"].Value = ibll.ReadInvoiceNum();
                         sti.Dictionary.Variables["CustomerName"].Value = label1.Text;
                         sti.Dictionary.Variables["CustomerPhone"].Value = label3.Text;
@@ -160,31 +163,39 @@ namespace CRM
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {
-            c = cbll.Readp(textBoxX4.Text);
-            textBoxX4.Enabled = false;
-            label1.Text = c.Name;
-            label3.Text = c.PhoneNumber;
+            if (textBoxX4.Text != "")
+            {
+                c = cbll.Readp(textBoxX4.Text);
+                textBoxX4.Enabled = false;
+                label1.Text = c.Name;
+                label3.Text = c.PhoneNumber;
+            }
+            
            
         }
 
         private void pictureBox7_Click(object sender, EventArgs e)
         {
-            double Adad = 0;
-            p = pbll.ReadN(textBoxX1.Text);
-            productslist2.Add(p);
-            productslist.Add(p);
-            string s = p.Name + " به ارزش" + p.Price.ToString("N0") + "تومان";
-            listBox1.Items.Add(s);
-            foreach (var i in productslist.ToList())
+            if (textBoxX1.Text != "")
             {
-              
-               Sum += i.Price;
-               
+                double Adad = 0;
+                p = pbll.ReadN(textBoxX1.Text);
+                productslist2.Add(p);
+                productslist.Add(p);
+                string s = p.Name + " به ارزش" + p.Price.ToString("N0") + "تومان";
+                listBox1.Items.Add(s);
+                foreach (var i in productslist.ToList())
+                {
+
+                    Sum += i.Price;
+
+                }
+                label9.Text = Sum.ToString("N0");
+                label12.Text = Sum.ToString("N0");
+                datagrid1();
+                productslist.Clear();
             }
-            label9.Text = Sum.ToString("N0");
-            label12.Text = Sum.ToString("N0");
-            datagrid1();
-            productslist.Clear();
+            
 
         }
         private void pictureBox1_Click(object sender, EventArgs e)
