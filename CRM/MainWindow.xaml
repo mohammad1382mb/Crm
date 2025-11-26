@@ -81,7 +81,6 @@
 
             <Image Source="/Image/USer.png" Margin="30,22,30,10" MouseLeftButtonDown="Image_MouseLeftButtonDown_1" Grid.Column="4" Cursor="Hand" RenderTransformOrigin="0.5,0.5" Stretch="Fill" Grid.Row="2"/>
             <hc:PersianCalendar Grid.Row="5" Grid.RowSpan="7" Grid.ColumnSpan="3" Grid.Column="8" Margin="14,12,9,60"/>
-            <hc:SearchBar Grid.ColumnSpan="4" Grid.Column="3" Height="40"  Margin="73,10,69,10" TextWrapping="Wrap" Text="SearchBar" VerticalAlignment="Center" Width="300"   Grid.RowSpan="2" FontFamily="Microsoft Tai Le" FontSize="16" HorizontalAlignment="Center"/>
             <local:Clocktime Margin="18,22,13,12" Grid.Row="11" Grid.Column="8" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Center" Loaded="Clocktime_Loaded" Width="286" Height="28"/>
             <Label Style="{StaticResource TitleTxtBorder}" Foreground="#ffffff" Content="مشتری ها" Margin="102,16,91,0" Grid.Row="2" Grid.Column="8" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Center" Height="46" Width="124"/>
             <Label Style="{StaticResource TitleTxtBorder}" Foreground="#241468" Content="فروش ها" Margin="91,16,1,0" Grid.Row="2" Grid.Column="5" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" Height="46" Width="114"/>

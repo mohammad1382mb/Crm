@@ -19,9 +19,9 @@
         <Image x:Name="CheckReminderWhite" Source="/Image/icons8-tick-50 (1).png" Margin="10,4,10,5" Cursor="Hand" Visibility="Visible" />
         <Image Source="/Image/remaiders.png" Grid.Column="3" Margin="0,4,0,5" />
 
-        <Label x:Name="TitleTxt" Grid.Column="2" Content="موضوع یادآور" VerticalAlignment="Center" HorizontalAlignment="Right"  Foreground="#ffffff" FontFamily="Tahoma" FontSize="14" Height="35" Margin="0,2" Width="118" FontWeight="Bold" Background="#00000000"  BorderBrush="#00000000" />
+        <Label x:Name="TitleTxt" Grid.Column="2" Content="موضوع یادآور" VerticalAlignment="Center" HorizontalAlignment="Center"  Foreground="#ffffff" FontFamily="Tahoma" Height="35" Margin="0,2" Width="114" FontWeight="Bold" Background="#00000000"  BorderBrush="#00000000" FlowDirection="RightToLeft" ScrollViewer.VerticalScrollBarVisibility="Disabled" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Center" />
 
-        <Label x:Name="InfoTxt" Grid.Column="1" Content="جزییات یادآور"  FontFamily="Tahoma" FontSize="13" Height="31" Margin="0,4" VerticalAlignment="Center" HorizontalAlignment="Right" Background="#00000000" Foreground="White" BorderBrush="#00000000" Width="361"/>
+        <Label x:Name="InfoTxt" Grid.Column="1" Content="جزییات یادآور"  FontFamily="Tahoma" FontSize="11" Height="31" Margin="0,4" VerticalAlignment="Center" HorizontalAlignment="Right" Background="#00000000" Foreground="White" BorderBrush="#00000000" Width="361"/>
 
     </Grid>
 </UserControl>

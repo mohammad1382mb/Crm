@@ -52,11 +52,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
@@ -411,61 +406,6 @@
             this.pictureBox5.TabStop = false;
             this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.Color.White;
-            this.label20.Location = new System.Drawing.Point(492, 640);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(18, 19);
-            this.label20.TabIndex = 36;
-            this.label20.Text = "0";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.ForeColor = System.Drawing.Color.White;
-            this.label21.Location = new System.Drawing.Point(442, 640);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(49, 19);
-            this.label21.TabIndex = 35;
-            this.label21.Text = "صفحه";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.Color.White;
-            this.label18.Location = new System.Drawing.Point(589, 640);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(18, 19);
-            this.label18.TabIndex = 33;
-            this.label18.Text = "0";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.White;
-            this.label17.Location = new System.Drawing.Point(542, 640);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(19, 19);
-            this.label17.TabIndex = 34;
-            this.label17.Text = "از";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.Color.White;
-            this.label19.Location = new System.Drawing.Point(614, 640);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(49, 19);
-            this.label19.TabIndex = 32;
-            this.label19.Text = "صفحه";
-            // 
             // label15
             // 
             this.label15.AutoSize = true;
@@ -520,11 +460,6 @@
             this.ClientSize = new System.Drawing.Size(1100, 670);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label16);
-            this.Controls.Add(this.label20);
-            this.Controls.Add(this.label21);
-            this.Controls.Add(this.label18);
-            this.Controls.Add(this.label17);
-            this.Controls.Add(this.label19);
             this.Controls.Add(this.label22);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.groupBox1);
@@ -569,11 +504,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.RichTextBox richTextBox1;

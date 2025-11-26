@@ -12,6 +12,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BE;
 using BLL;
+using IPE.SmsIrClient;
+using IPE.SmsIrClient.Models.Requests;
 
 namespace CRM
 {
@@ -44,11 +46,7 @@ namespace CRM
             public string[] Mobiles { get; set; }
             public int? SendDateTime { get; set; }
         }
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
+       
         private void pictureBox5_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -59,10 +57,6 @@ namespace CRM
             this.Close();
         }
 
-        private async void pictureBox1_Click(object sender, EventArgs e)
-        {
-           
-        }
 
         private void SmsPanel_Load(object sender, EventArgs e)
         {
@@ -74,6 +68,7 @@ namespace CRM
                 PhoneNumber.Add(item);
             }
             textBoxX1.AutoCompleteCustomSource = PhoneNumber;
+            textBoxX4.AutoCompleteCustomSource = PhoneNumber;
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
@@ -162,7 +157,7 @@ namespace CRM
                 catch (Exception ex)
                 {
 
-                    //mb.MyShowDialog("خطا", "خطا در ارسال پیامک", ex.Message, false, true);
+                    mb.MyShowDialog("خطا", "خطا در ارسال پیامک", ex.Message, false, true);
                 }
             }
             else
@@ -192,5 +187,72 @@ namespace CRM
         {
             richTextBox1.Text = "";
         }
+
+        //قالب ارسال پیامک بدون در نظر گرفتن لیست سیاه 
+        #region Smspanel
+
+        // if (textBoxX4.Text != "" && richTextBox1.Text != "" && richTextBox1.Text != "پیام مورد نظر خود را در اینجا بنویسید")
+        //    {
+        //        HttpClient httpClient = new HttpClient();
+
+        //        httpClient.DefaultRequestHeaders.Add("x-api-key", "zUb1eonffckgDlL9zfqcPDd0qgkmZAmU1WIm1MTSOTruqvhZOSK3FDpfgN7G63SP");
+
+        //        VerifySendModel model = new VerifySendModel()
+        //        {
+
+        //            Mobile = textBoxX4.Text,
+        //            TemplateId = 411125,
+        //            Parameters = new VerifySendParameterModel[] {
+        //          new VerifySendParameterModel {
+        //            Name = "CODE", Value = richTextBox1.Text
+        //          }
+        //        }
+        //        };
+
+        //        string payload = System.Text.Json.JsonSerializer.Serialize(model);
+        //        StringContent stringContent = new StringContent(payload, Encoding.UTF8, "application/json");
+
+        //        try
+        //        {
+        //            HttpResponseMessage response = await httpClient.PostAsync("https://api.sms.ir/v1/send/verify", stringContent);
+
+        //            string sendResult = await response.Content.ReadAsStringAsync();
+
+        //            mb.MyShowDialog("موفقیت", "پیامک با موفقیت ارسال شد", sendResult, false, false);
+
+        //        }
+        //        catch (Exception ex)
+        //        {
+
+        //            mb.MyShowDialog("خطا", "خطا در ارسال پیامک", ex.Message, false, true);
+        //        }
+        //    }
+        //    else
+        //    {
+        //        mb.MyShowDialog("اخطار", "شماره و پیامکی که میخواید ارسال بشه رو بنویسید", "", false, true);
+        //    }
+
+        //    richTextBox1.Text = "پیام مورد نظر خود را در اینجا بنویسید";
+        //    textBoxX4.Text = "";
+
+
+
+        //public class VerifySendParameterModel
+        //{
+        //    public string Name { get; set; }
+        //    public string Value { get; set; }
+        //}
+
+        //public class VerifySendModel
+        //{
+        //    public string Mobile { get; set; }
+
+        //    public int TemplateId { get; set; }
+
+        //    public VerifySendParameterModel[] Parameters { get; set; }
+        //}
+
+        #endregion
+
     }
 }

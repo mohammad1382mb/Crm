@@ -45,11 +45,6 @@
             this.dataGridViewX1 = new DevComponents.DotNetBar.Controls.DataGridViewX();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
@@ -300,61 +295,6 @@
             this.label16.TabIndex = 46;
             this.label16.Text = "تعداد یادآور ها تا این لحظه";
             // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.Color.White;
-            this.label20.Location = new System.Drawing.Point(498, 647);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(18, 19);
-            this.label20.TabIndex = 45;
-            this.label20.Text = "0";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.ForeColor = System.Drawing.Color.White;
-            this.label21.Location = new System.Drawing.Point(448, 647);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(49, 19);
-            this.label21.TabIndex = 44;
-            this.label21.Text = "صفحه";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.Color.White;
-            this.label18.Location = new System.Drawing.Point(595, 647);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(18, 19);
-            this.label18.TabIndex = 42;
-            this.label18.Text = "0";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.White;
-            this.label17.Location = new System.Drawing.Point(548, 647);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(19, 19);
-            this.label17.TabIndex = 43;
-            this.label17.Text = "از";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.Color.White;
-            this.label19.Location = new System.Drawing.Point(620, 647);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(49, 19);
-            this.label19.TabIndex = 41;
-            this.label19.Text = "صفحه";
-            // 
             // label22
             // 
             this.label22.AutoSize = true;
@@ -386,25 +326,25 @@
             this.انجامشدهToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 98);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(127, 76);
             // 
             // ویرایشToolStripMenuItem
             // 
             this.ویرایشToolStripMenuItem.Name = "ویرایشToolStripMenuItem";
-            this.ویرایشToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.ویرایشToolStripMenuItem.Size = new System.Drawing.Size(126, 24);
             this.ویرایشToolStripMenuItem.Text = "ویرایش";
             // 
             // حذفToolStripMenuItem
             // 
             this.حذفToolStripMenuItem.Name = "حذفToolStripMenuItem";
-            this.حذفToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.حذفToolStripMenuItem.Size = new System.Drawing.Size(126, 24);
             this.حذفToolStripMenuItem.Text = "حذف";
             this.حذفToolStripMenuItem.Click += new System.EventHandler(this.حذفToolStripMenuItem_Click);
             // 
             // انجامشدهToolStripMenuItem
             // 
             this.انجامشدهToolStripMenuItem.Name = "انجامشدهToolStripMenuItem";
-            this.انجامشدهToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.انجامشدهToolStripMenuItem.Size = new System.Drawing.Size(126, 24);
             this.انجامشدهToolStripMenuItem.Text = "انجام شده";
             this.انجامشدهToolStripMenuItem.Click += new System.EventHandler(this.انجامشدهToolStripMenuItem_Click);
             // 
@@ -416,11 +356,6 @@
             this.ClientSize = new System.Drawing.Size(1100, 670);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label16);
-            this.Controls.Add(this.label20);
-            this.Controls.Add(this.label21);
-            this.Controls.Add(this.label18);
-            this.Controls.Add(this.label17);
-            this.Controls.Add(this.label19);
             this.Controls.Add(this.label22);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.dataGridViewX1);
@@ -460,11 +395,6 @@
         private DevComponents.DotNetBar.Controls.DataGridViewX dataGridViewX1;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.RichTextBox richTextBox1;
